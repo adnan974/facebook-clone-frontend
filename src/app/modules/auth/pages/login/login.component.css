@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+
+.mat-card-content {
+ display: block;
+  }
+
+
+
+.mat-card{
+    width: 50%;
+    margin: auto;
+
+}
+
+.mat-form-field{
+    display: block;
+}
+
+.login-button{
+    width: 100%;
+}
