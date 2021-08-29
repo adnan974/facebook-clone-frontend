@@ -3,8 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  projectName: "Facebook-Clone",
   production: false,
   BASE_URL: "http://localhost:8080"
+
 };
 
 

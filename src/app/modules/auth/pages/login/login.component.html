@@ -1,31 +1,52 @@
 <div class="login-page-container">
-    <h1>Fakebook</h1>
-    <mat-card class="login-card">
-        <mat-card-header>
-          <mat-card-title>Se connecter à fakebook</mat-card-title>
-        </mat-card-header>
-        <mat-card-content >
-            <form #userLoginForm="ngForm" (submit)="onSubmit(userLoginForm.value)" class="login-form">
-                <div>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Adresse mail ou numéro de tel</mat-label>
-                        <input name="login-input" ngModel matInput>
-                    </mat-form-field>
-                </div>
-                
-                <div>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Mot de passe</mat-label>
-                        <input name="password-input" ngModel matInput type="password">
-                    </mat-form-field>
-                </div>
+    <div class="login-content">
+        <div class="login-titles">
+            <h1>Fakebook</h1>
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+        </div>
 
-                <button mat-raised-button color="primary" class="login-button" type="submit" >Se connecter</button>
-            </form>
-            
-           
-        </mat-card-content>
-      </mat-card>
+        <div class="login-form">
+            <mat-card class="login-card">
+                <mat-card-header>
+                  <mat-card-title>Conect to Facebook-Clone</mat-card-title>
+                </mat-card-header>
+                <mat-card-content >
+                    
+                    <form #userLoginForm="ngForm" (submit)="onSubmit(userLoginForm.value)" class="form">
+                        
+        
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="login-input" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+        
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="login-input" aria-describedby="emailHelp" placeholder="Password">
+                        </div>
+        
+                        <button class="btn btn-primary login-button" color="primary"  type="submit" >Log in</button>
+
+
+                    </form>
+
+                    <div class="divider">
+                        <mat-divider></mat-divider>
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-success register-button">Create new account</button>
+                    </div>
+
+                </mat-card-content>
+              </mat-card>
+
+              <div>
+                <p>Create a Page for a celebrity, band or business.</p>
+            </div>
+        </div>
+        
+        
+    </div>
+   
 </div>
 
   
