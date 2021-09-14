@@ -1,0 +1,65 @@
+.register-title {
+    color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+}
+
+.register-sub-title {
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.divider {
+    margin: 10px 0 10px 0;
+}
+
+.text-input {
+    background: #f5f6f7;
+}
+
+
+
+.form-check {
+    border: 1px solid #ccd0d5;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+
+}
+
+.mat-dialog-title {
+    margin: 0;
+}
+
+.mat-dialog-content {
+    overflow-y: hidden !important;
+}
+
+.register-button {
+    width: 100%;
+    background-color: #00a400;
+    border-color: #00a400;
+}
+
+.register-button:hover {
+    width: 100%;
+    background-color: #00a400;
+}
+
+.register-button-container {
+    margin: auto;
+    width: 194px;
+}
+
+.date-of-birth-label {
+    margin-top: 10px;
+}
+
+.agreement-text {
+    font-size: 11px;
+    color: #777;
+}

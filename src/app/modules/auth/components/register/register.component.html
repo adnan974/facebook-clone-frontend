@@ -1,0 +1,119 @@
+<div mat-dialog-title>
+  <span class="register-title">Sign Up</span>
+
+</div>
+<small class="register-sub-title">it's quick and easy</small>
+
+<mat-dialog-content class="mat-typography">
+
+  <div class="divider">
+    <mat-divider></mat-divider>
+  </div>
+
+
+  <form #userRegisterForm="ngForm" class="form">
+
+    <div class="row gy-2">
+
+      <div class="form-group col-6">
+        <input type="text" #firstname="ngModel" [class.is-invalid]="firstname.invalid && firstname.touched"
+          class="form-control text-input" id="fistname" name="firstname" [(ngModel)]="userData.firstname"
+          placeholder="Firstname" required>
+        <small class="text-danger" [class.d-none]="firstname.valid || firstname.untouched">Invalid firstname</small>
+      </div>
+
+      <div class="form-group col-6">
+        <input type="text" #username="ngModel" [class.is-invalid]="username.invalid && username.touched"
+          class="form-control text-input" id="surname" name="surname" [(ngModel)]="userData.username"
+          placeholder="Surname" required>
+        <small class="text-danger" [class.d-none]="username.valid || username.untouched">Invalid username</small>
+      </div>
+
+
+
+      <div class="form-group col-12">
+        <input type="email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          [class.is-invalid]="email.invalid && email.touched" class="form-control text-input" id="email" name="email"
+          [(ngModel)]="userData.email" placeholder="email adress" required>
+        <small class="text-danger" [class.d-none]="email.valid || email.untouched">Invalid email</small>
+      </div>
+
+      <div *ngIf="email.valid">
+        <div class="form-group col-12">
+          <input type="email" #emailConfirm="ngModel" [pattern]="email.value"
+            [class.is-invalid]="emailConfirm.invalid && emailConfirm.touched" class="form-control text-input"
+            id="emailConfirm" name="emailConfirm" [(ngModel)]="userData.emailConfirm"
+            placeholder="Re-enter email adress" required>
+          <small class="text-danger" [class.d-none]="emailConfirm.valid || emailConfirm.untouched">Email doesn't
+            match</small>
+        </div>
+      </div>
+
+
+      <div class="form-group col-12">
+        <input type="password" #password="ngModel" [class.is-invalid]="password.invalid && password.touched"
+          class="form-control text-input" id="password" name="password" [(ngModel)]="userData.password"
+          placeholder="new password" required>
+        <small class="text-danger" [class.d-none]="password.valid || password.untouched">Invalid password</small>
+      </div>
+
+      <div class="form-group col-12 mb-2">
+        <div class="dateOfBith-label">Date of birth</div>
+        <input type="date" #dateOfBirth="ngModel" class="form-control" id="dateOfBirth" name="dateOfBirth"
+          [(ngModel)]="userData.dateOfBirth" (change)="birthDayIsValid(dateOfBirth.value)" required>
+
+        <ng-container *ngIf="!isBirthDayValid">
+          <small class="text-danger" [class.d-none]="dateOfBirth.untouched">Invalid birdthday</small>
+        </ng-container>
+
+      </div>
+
+      <div class="gender-label">Gender</div>
+      <div class="form-group col-6">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" value="male" [(ngModel)]="userData.gender" checked>
+          <label class="form-check-label">
+            Male
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group col-6">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" value="female" [(ngModel)]="userData.gender">
+          <label class="form-check-label">
+            Female
+          </label>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="agreement-text">
+      <p>By clicking Sign Up, you agree to our Terms. Learn how we collect, use and share your data in our Data Policy
+        and how we use cookies and similar technology in our Cookie Policy. You may receive SMS notifications from us
+        and can opt out at any time.</p>
+    </div>
+
+    <!-- <div class="register-button-container">
+      <button class="btn btn-primary register-button" color="primary" type="submit">Sign Up</button>
+
+    </div> -->
+
+
+
+
+  </form>
+
+
+
+</mat-dialog-content>
+
+<div mat-dialog-actions>
+  <div class="register-button-container">
+    <button class="btn btn-primary register-button" color="primary" type="submit"
+      (click)="onSubmit(userRegisterForm.value)">Sign Up</button>
+  </div>
+</div>
