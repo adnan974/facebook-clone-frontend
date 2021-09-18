@@ -1,0 +1,96 @@
+.navbar-{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+}
+
+.navbar-left-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+
+.navbar-right-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/*items in the left */
+
+.navbar-left-items{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+}
+
+
+.search-bar{
+    position: relative;
+}
+.search-bar>input{
+    padding-left: 25px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    outline: none;
+    border: 1px solid #F2F2F2;
+    height: 40px;
+}
+
+.search-bar>mat-icon{
+    position: absolute;
+    top:8px;
+    left: 2px;
+}
+
+.navbar-logo-container{
+    margin-left: 16px;
+}
+
+/*items in the middle*/
+.navbar-centered-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-centered-items>div{
+    width: 100%;
+    margin: 0 4px 0 4px;
+    text-align: center;
+}
+
+.navbar-centered-items>div.active{
+    border-bottom: 4px solid #1877F2;
+    color: #1877F2;
+
+}
+
+
+.navbar-centered-items>div:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;
+    
+}
+
+
+.navbar-centered-items>div>mat-icon{
+    width: fit-content;
+    height: fit-content;
+    font-size: 34px;
+
+}

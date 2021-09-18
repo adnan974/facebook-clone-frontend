@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
-import {MatDividerModule} from '@angular/material/divider'; 
 import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
@@ -23,8 +22,7 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [
-    RouterModule,
-    MatDividerModule
+    RouterModule
   ]
 })
 export class AuthRoutingModule { }

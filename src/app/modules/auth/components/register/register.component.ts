@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Register } from 'src/app/shared/models/user.entity';
+import { Register } from 'src/app/shared/models/register.entity';
 
 @Component({
   selector: 'app-register',

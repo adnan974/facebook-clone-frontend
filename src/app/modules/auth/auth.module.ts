@@ -10,6 +10,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog'; 
+import {MatDividerModule} from '@angular/material/divider'; 
+
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatButtonModule,
     FormsModule,
     HttpClientModule,
+    MatDividerModule,
 
     MatDialogModule
     
