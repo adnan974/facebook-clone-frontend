@@ -1,0 +1,42 @@
+.home-sidebar-container{
+    height: 100%;
+}
+ul {
+    padding-left: 8px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.profile-photo {
+    border-radius: 20px;
+    width: 28px;
+    height: 28px;
+    margin-right: 7px;
+
+}
+
+.sidebar-icon{
+    width: 28px;
+    height: 28px;
+    margin-right: 7px;
+}
+
+
+li{
+    padding-left: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 44px;
+    border-radius: 5px;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: #e4e6e9;
+
+}
