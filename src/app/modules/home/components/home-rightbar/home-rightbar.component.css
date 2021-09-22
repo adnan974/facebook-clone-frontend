@@ -1,0 +1,79 @@
+.rightbar-container{
+    height: 100%;
+    overflow: scroll;
+}
+
+
+h2 {
+    color: #65676b;
+    font-size: 1.0625rem;
+    font-weight: 600;
+}
+
+/* Partie sponsor */
+
+.sponsor-container {
+    margin-bottom: 8px;
+}
+
+.sponsor-info {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.sponsor-info:hover {
+    cursor: pointer;
+    background-color: #e4e6e9;
+}
+
+.sponsor-image {
+    height: 99px;
+    width: 99px;
+    border-radius: 8px;
+}
+
+.sponsor-text {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsor-text > div{
+    font-size: .9375rem;
+    font-weight: 500;
+}
+.sponsor-text > small{
+    font-size: .8125rem;
+    font-weight: 400;
+    color: #65676b;
+}
+
+
+/* Partie contacts*/
+
+.contact-container{
+    margin-top: 20px;
+}
+
+.profile-photo{
+    height: 28px;
+    width: 28px;
+    border-radius: 20px;
+    margin-right: 12px;
+}
+
+.contact-container > div{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 44px;
+}
+
+.contact-container > div:hover{
+    background-color: #e4e6e9;
+    cursor: pointer;
+}
+

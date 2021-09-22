@@ -1,0 +1,53 @@
+.news-feed-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 100%;
+}
+
+.stories-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.storie-item {
+    height: 33%;
+    width: 100%;
+    margin: 4px;
+    border: 1px solid black
+}
+
+/* quoi de neuf contaner*/
+
+.post-compoment-container{
+    max-width: 70%;
+    margin: auto;
+}
+
+
+
+.profile-photo{
+    margin-right: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.post-infos-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-for-post{
+    height: 40px;
+    padding: 8px 12px 8px 12px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+    border: 1px solid white;
+}
+
+.mat-card-actions{
+    display: flex;
+    justify-content: space-evenly;
+}

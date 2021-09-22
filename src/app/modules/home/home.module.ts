@@ -6,7 +6,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeLeftbarComponent } from './components/home-leftbar/home-leftbar.component';
 import { HomeRightbarComponent } from './components/home-rightbar/home-rightbar.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
-
+import {MatDividerModule} from '@angular/material/divider'; 
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -19,7 +21,10 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SharedModule
+    SharedModule,
+    MatDividerModule,
+    MatCardModule,
+    MatIconModule
   ]
 })
 export class HomeModule { }
