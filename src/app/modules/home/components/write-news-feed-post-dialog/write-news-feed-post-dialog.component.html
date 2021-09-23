@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>
+    <div class="title">
+        <div>Create a post</div>
+        <div class="close-icon-container" mat-dialog-close>
+            <mat-icon >close</mat-icon>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+</h2>
+<mat-dialog-content>
+    <div class="profile-info-container">
+        <img class="profile-photo" src="assets/1597232196865.jpeg" />
+        <div class="profile-name-and-option-container">
+            <div class="name-info">Nom et Prenom</div>
+            <div class="option-info">
+                <mat-icon class="option-info-icon people-alt-icon">people_alt</mat-icon>
+                <span class="option-text-info">Friends</span>
+                <mat-icon class="option-info-icon arrow-drop-down-icon">arrow_drop_down</mat-icon>
+            </div>
+        </div>
+    </div>
+    <div>
+        <textarea type="text" placeholder="What's new..."></textarea>
+    </div>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button class="publish-button-not-allowed" mat-button mat-dialog-close>Publish</button>
+</mat-dialog-actions>

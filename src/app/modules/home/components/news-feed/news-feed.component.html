@@ -1,4 +1,3 @@
-
 <!-- <div class="news-feed-container">
     <div class="stories-container">
         <div class="storie-item">
@@ -18,29 +17,11 @@
 
 
 <div class="post-compoment-container">
-    <mat-card>
-        <mat-card-content>
-            <div class="post-infos-container">
-                <img class="profile-photo" src="/assets/1597232196865.jpeg" />
-                <input class="input-for-post" type="text" placeholder="What's new {prenom}?" />
-            </div>
-        </mat-card-content>
-        <mat-divider></mat-divider>
-        <mat-card-actions>
-            <div>
-                <mat-icon>videocam</mat-icon>
+    <div class="write-post-container">
+        <app-write-news-feed-post></app-write-news-feed-post>
+    </div>
 
-                Direct vidéo
-            </div>
-            <div>
-                <mat-icon class="material-icons-outlined">collections</mat-icon>
-
-                Photo/Vidéo
-            </div>
-            <div>
-                <mat-icon class="material-icons-outlined">emoji_emotions</mat-icon>
-                Mood/Activity
-            </div>
-        </mat-card-actions>
-    </mat-card>
+    <div class="read-post-container">
+        <app-news-feed-post></app-news-feed-post>
+    </div>
 </div>

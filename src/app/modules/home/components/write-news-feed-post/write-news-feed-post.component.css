@@ -1,0 +1,64 @@
+
+
+
+
+.profile-photo{
+    margin-right: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.post-infos-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-for-post{
+    padding: 8px 12px 8px 12px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1.0625rem;
+    background-color: #f0f2f5;
+    border: 1px solid white;
+}
+
+.input-for-post:hover{
+    cursor: pointer;
+    background-color: #e4e6e9;
+}
+
+
+
+.mat-card-actions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mat-card-actions > div{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+
+}
+
+.mat-card-actions > div:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.collections-icon{
+    color: #45bd62;
+}
+
+.video-cam-icon{
+    color: #f02849;
+}
+
+.emoji-icon{
+    color:#f7b928;
+}

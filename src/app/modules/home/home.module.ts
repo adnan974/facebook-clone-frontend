@@ -9,6 +9,10 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 import {MatDividerModule} from '@angular/material/divider'; 
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { WriteNewsFeedPostComponent } from './components/write-news-feed-post/write-news-feed-post.component';
+import { WriteNewsFeedPostDialogComponent } from './components/write-news-feed-post-dialog/write-news-feed-post-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NewsFeedPostComponent } from './components/news-feed-post/news-feed-post.component';
 
 
 @NgModule({
@@ -16,7 +20,10 @@ import { MatIconModule } from '@angular/material/icon';
     HomeComponent,
     HomeLeftbarComponent,
     HomeRightbarComponent,
-    NewsFeedComponent
+    NewsFeedComponent,
+    WriteNewsFeedPostComponent,
+    WriteNewsFeedPostDialogComponent,
+    NewsFeedPostComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +31,9 @@ import { MatIconModule } from '@angular/material/icon';
     SharedModule,
     MatDividerModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
+
   ]
 })
 export class HomeModule { }
